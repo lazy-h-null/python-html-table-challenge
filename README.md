@@ -19,7 +19,7 @@ The goal is to fetch product data (Name, Price, Image) and render it into a stru
 - [x] 11. Insert the table string into the body of the template file using `replace()`.
 - [x] 12. Handle file reading (`template.html`) and writing (`index.html`) properly.
 - [x] 13. Use additional DaisyUI elements (Stats/Product Count box) as a bonus.
-- [ ] 14. Share the website via GitHub Pages.
+- [x] 14. Share the website via GitHub Pages.
 
 ## 🔗 Project Links
 - **Repository:** [https://github.com/lazy-h-null/python-html-table-challenge.git]
