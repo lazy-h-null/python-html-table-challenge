@@ -18,15 +18,15 @@ html_links= """
 html_title = "<h1 class='text-3xl font-bold text-center mb-4 text-primary'>Freshco Discount List</h1>"
 
 html_table_start = """
-    <div class="overflow-x-auto max-w-2xl mx-auto border rounded-lg shadow-sm mt-5">
-        <table class="table table-zebra table-xs min-w-[1000px] text-xs">
+    <div class="overflow-x-auto max-w-3xl mx-auto border rounded-lg shadow-sm mt-5">
+        <table class="table table-zebra table-xs min-w-[900px] table-fixed text-xs">
             <thead>
                 <tr class="bg-base-200">
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Image</th>
-                    <th></th>
+                    <th class="w-[100px]">ID</th>
+                    <th class="w-[400px]">Name</th>
+                    <th class="w-[100px] text-center">Price</th>
+                    <th class="w-[100px] text-center">Image</th>
+                    <th class="w-[150px]"></th>
                 </tr>
             </thead>
             <tbody>
@@ -88,12 +88,17 @@ for item in data_freshco:
     row = f"""
                 <tr>
                     <td>{id}</td>
-                    <td>{name}</td>
-                    <td>{price}</td>
-                    <td><img src="{image}" alt="product" class="w-[50px] h-[50px] rounded shadow border object-contain"></td>
+                    <td class="max-w-[200px] break-words text-left">{name}</td>
+                    <td class="text-center">{price}</td>
+                    <td><img src="{image}" 
+                            alt="product" 
+                            width="50" height="50"
+                            class="w-[50px] h-[50px] rounded shadow border object-cover mx-auto"></td>
                     <td>
-                        <button class="btn btn-success btn-xs text-white px-3">Edit</button>
-                        <button class="btn btn-error btn-xs text-white px-3">Delete</button></td>
+                        <div class="justify-center">
+                            <button class="btn btn-success btn-xs text-white w-16">Edit</button>
+                            <button class="btn btn-error btn-xs text-white w-16">Delete</button></td>
+                        </div>
                 </tr>
     """ 
 
